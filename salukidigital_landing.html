@@ -1,0 +1,226 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saluki Digital Intelligence — Empowering Small Businesses</title>
+  <style>
+    :root{
+      --maroon: #7a0019;
+      --silver: #b2b2b2;
+      --black: #0b0b0b;
+      --white: #ffffff;
+      --max-width: 1100px;
+      --section-pad: 56px;
+      --radius: 10px;
+      --accent: var(--maroon);
+    }
+    *{box-sizing: border-box}
+    body{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: var(--black);
+      margin:0;
+      background: #fff;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.5;
+    }
+    .wrap{max-width:var(--max-width);margin:0 auto;padding:24px;}
+    header.site-header{
+      display:flex;align-items:center;justify-content:space-between;padding:18px 0;
+      border-bottom:1px solid rgba(0,0,0,0.06);
+    }
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:56px;height:56px;border-radius:8px;background:var(--maroon);display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700;font-size:20px;
+      box-shadow: 0 4px 14px rgba(122,0,25,0.12);
+    }
+    .brand h1{margin:0;font-size:18px;letter-spacing:0.2px}
+    .tagline{color:var(--silver);font-size:13px;margin-top:4px}
+    nav a{margin-left:18px;text-decoration:none;color:var(--black);font-weight:600;font-size:14px}
+    .hero{
+      display:flex;gap:36px;align-items:center;padding:var(--section-pad) 0;
+      border-bottom:1px solid rgba(0,0,0,0.04);
+    }
+    .hero-left{flex:1}
+    .eyebrow{color:var(--maroon);font-weight:700;margin-bottom:12px}
+    .hero h2{font-size:34px;margin:0 0 14px 0;line-height:1.05}
+    .hero p{color:#333;margin:0 0 22px 0}
+    .cta{display:flex;gap:12px}
+    .btn{
+      padding:12px 18px;border-radius:8px;border:0;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;
+    }
+    .btn-primary{background:var(--maroon);color:var(--white)}
+    .btn-ghost{background:transparent;border:2px solid var(--silver);color:var(--black)}
+    .hero-right{width:420px;background:#fafafa;padding:18px;border-radius:12px;border:1px solid rgba(0,0,0,0.04)}
+    .card-title{font-weight:700;margin:0 0 8px 0}
+    .kpi{display:flex;gap:12px;margin-top:10px}
+    .kpi div{flex:1;text-align:center;padding:10px;border-radius:8px;background:var(--white);border:1px solid rgba(0,0,0,0.03)}
+    section.services{padding:var(--section-pad) 0;border-bottom:1px solid rgba(0,0,0,0.04)}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{padding:18px;border-radius:10px;border:1px solid rgba(0,0,0,0.04);background:linear-gradient(180deg,#fff,#fbfbfb)}
+    .service h3{margin:0 0 8px 0}
+    .service p{margin:0;color:#444;font-size:14px}
+    .about{display:flex;gap:24px;align-items:center;padding:var(--section-pad) 0;border-bottom:1px solid rgba(0,0,0,0.04)}
+    .founder{width:220px;height:220px;border-radius:12px;background:var(--silver);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:22px}
+    .founder p{margin:0}
+    .testimonials{padding:var(--section-pad) 0}
+    .test-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .testimonial{padding:18px;border-radius:8px;background:#fafafa;border:1px solid rgba(0,0,0,0.04)}
+    .cta-banner{background:var(--maroon);color:var(--white);padding:28px;border-radius:12px;margin-top:18px;text-align:center}
+    footer{padding:18px 0;border-top:1px solid rgba(0,0,0,0.06);font-size:14px;color:#666}
+    .contact-form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .input,textarea{padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.08);width:100%;font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+    @media (max-width:900px){
+      .hero{flex-direction:column}
+      .hero-right{width:100%}
+      .services-grid{grid-template-columns:1fr}
+      .test-grid{grid-template-columns:1fr}
+      .about{flex-direction:column}
+      .contact-form{grid-template-columns:1fr}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo">SDI</div>
+        <div>
+          <h1>Saluki Digital Intelligence</h1>
+          <div class="tagline">Empowering Small Businesses Through Intelligent Digital Design</div>
+        </div>
+      </div>
+      <nav aria-label="Main Navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="hero-left">
+          <div class="eyebrow">Local AI Websites & Automation — Carbondale</div>
+          <h2>AI websites & marketing that get local customers through your door — fast.</h2>
+          <p>We build modern, AI-enhanced websites for small, non-technical businesses in Southern Illinois. Fast delivery, student-friendly pricing, and tools that automate calls, bookings, and lead capture.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact">Get Your Free Demo</a>
+            <a class="btn btn-ghost" href="#playbook">See the Playbook</a>
+          </div>
+
+          <div style="margin-top:18px;color:#444">
+            <strong>Starter Offer:</strong> Full AI website demo for $0 — show only. Setup price $997. Monthly marketing packages from $500/month.
+          </div>
+        </div>
+
+        <aside class="hero-right" aria-label="Quick Stats">
+          <div class="card-title">Why local businesses choose Saluki</div>
+          <p style="color:#555;margin-bottom:8px">Student-led. AI-first. Affordable.</p>
+          <div class="kpi">
+            <div><div style="font-weight:800;font-size:20px">24–48h</div><div style="font-size:12px;color:#666">Demo in</div></div>
+            <div><div style="font-weight:800;font-size:20px">~$1k</div><div style="font-size:12px;color:#666">Site price</div></div>
+            <div><div style="font-weight:800;font-size:20px">70%+</div><div style="font-size:12px;color:#666">Margin on ads</div></div>
+          </div>
+          <div style="margin-top:12px;font-size:13px;color:#444">Built with Google AI Studio & Models Lab AI — rapid prototyping that reduces cost and time to value.</div>
+        </aside>
+      </section>
+
+      <section id="services" class="services" aria-label="Services">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;">
+          <h2 style="margin:0">Our Services</h2>
+          <div style="color:var(--silver);font-size:14px">Designed for Carbondale & Southern Illinois</div>
+        </div>
+        <div style="height:18px"></div>
+        <div class="services-grid">
+          <div class="service">
+            <h3>AI-Powered Website</h3>
+            <p>Fast, responsive websites with built-in AI assistants that answer FAQs, qualify leads, and book appointments — deployed in days.</p>
+          </div>
+          <div class="service">
+            <h3>Automation & Chatbots</h3>
+            <p>Gemini-based chatbots and Models Lab integrations that handle customer queries 24/7 and reduce phone time for staff.</p>
+          </div>
+          <div class="service">
+            <h3>Local Marketing</h3>
+            <p>Google Ads, local SEO, and lead nurturing campaigns managed for small budgets with vetted freelancers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-label="About the Founder">
+        <div class="founder">Hajj<br>Howard</div>
+        <div>
+          <h3 style="margin-top:0">Founder & AI and Digital Systems Student</h3>
+          <p style="color:#333;margin-top:4px">As a student at SIU, I build affordable AI tools and websites for local businesses. My approach combines rapid prototyping (Google AI Studio / Relume) with practical marketing to drive measurable leads.</p>
+          <p style="margin-top:8px;color:#555"><strong>Local & Trusted:</strong> I live and study in Carbondale — I work with neighbors and campus organizations to grow sustainably.</p>
+        </div>
+      </section>
+
+      <section class="testimonials" aria-label="Testimonials & Results">
+        <h2 style="margin:0 0 12px 0">Client results & testimonials</h2>
+        <div class="test-grid">
+          <div class="testimonial">
+            <strong>“Great results — more calls in week one.”</strong>
+            <div style="color:#666;margin-top:8px;font-size:13px">– Local HVAC Owner (placeholder)</div>
+          </div>
+          <div class="testimonial">
+            <strong>“Fast delivery and easy to work with.”</strong>
+            <div style="color:#666;margin-top:8px;font-size:13px">– Restaurant Owner (placeholder)</div>
+          </div>
+        </div>
+
+        <div class="cta-banner" style="margin-top:18px">
+          <div style="font-size:18px;font-weight:700">Ready for your demo?</div>
+          <div style="margin-top:8px">Schedule a 10-minute walkthrough and see what an AI-powered site can do for your business.</div>
+          <div style="margin-top:12px"><a class="btn btn-primary" href="#contact">Schedule Demo</a></div>
+        </div>
+      </section>
+
+      <section id="contact" style="padding:var(--section-pad) 0" aria-label="Contact">
+        <div style="display:flex;justify-content:space-between;gap:18px;align-items:flex-start;flex-wrap:wrap">
+          <div style="flex:1;min-width:300px">
+            <h2 style="margin-top:0">Get in touch</h2>
+            <p style="color:#444">I’m Hajj — founder of Saluki Digital Intelligence. If you want a fast demo or need help getting your business online, drop a line.</p>
+
+            <div style="margin-top:12px">
+              <div style="font-size:13px;color:#666">Phone</div>
+              <div style="font-weight:700">+1 (555) 555-5555</div>
+              <div style="height:8px"></div>
+              <div style="font-size:13px;color:#666">Email</div>
+              <div style="font-weight:700">hajj@salukidigital.com</div>
+            </div>
+          </div>
+
+          <div style="flex:1;min-width:300px">
+            <form onsubmit="alert('This form is a demo. Replace with your form handler or email set up.'); return false;">
+              <div class="contact-form">
+                <input class="input" type="text" name="name" placeholder="Your name" required>
+                <input class="input" type="email" name="email" placeholder="Email" required>
+                <input class="input" type="text" name="business" placeholder="Business name">
+                <input class="input" type="text" name="phone" placeholder="Phone">
+              </div>
+              <div style="margin-top:12px">
+                <textarea name="message" placeholder="How can I help?"></textarea>
+              </div>
+              <div style="margin-top:12px">
+                <button class="btn btn-primary" type="submit">Request Demo</button>
+              </div>
+            </form>
+            <div style="font-size:12px;color:#666;margin-top:8px">Demo note: I will follow up personally. This page is a starter template to paste into Relume or Framer.</div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+          <div>© Saluki Digital Intelligence — Hajj Howard</div>
+          <div style="color:var(--silver)">Carbondale, Illinois</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
